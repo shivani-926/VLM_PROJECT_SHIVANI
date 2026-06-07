@@ -1,0 +1,13 @@
+model:
+  captioning: "Salesforce/blip-image-captioning-base"
+  vqa: "Salesforce/blip-vqa-base"
+  cache_dir: "./models"
+
+inference:
+  max_new_tokens: 50
+  device: "cpu"
+
+paths:
+  data_raw: "./data/raw"
+  data_processed: "./data/processed"
+  outputs: "./outputs/results.json"
